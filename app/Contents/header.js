@@ -1,4 +1,3 @@
-
 export const data = {
     name: "Thanakrit Charoenchinnapat",
     enducation: "Student Taweethapisek School",
