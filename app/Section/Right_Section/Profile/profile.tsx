@@ -9,21 +9,20 @@ const scrollLogos = [
     "/css.png",
     "/html.png",
     "/js.png",
-    "/Nextjs.png",
     "/React.png",
-    "/Tailwind.png",
     "/Typescript.png",
     "/Vitejs.png",
     "/Vue.js.png",
+    "/dart.png",
 ];
 
 const Profile: FC = () => {
     return (
-        <div className="flex flex-col items-center justify-center space-y-4">
+        <div className="flex flex-col items-center justify-center space-y-4" id="Profile-section">
             {/* Profile Image */}
             <div className="w-40 h-40 sm:w-44 sm:h-44 flex justify-center items-center mb-3">
                 <img
-                    src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                    src="/Thanakrit01.jpg"
                     alt="Profile picture of Thanakrit Charoenchinnapat"
                     className="w-full h-full object-cover rounded-full ring-4 ring-white ring-opacity-60 shadow-lg transition-all duration-300 ease-in-out hover:ring-8 hover:ring-pink-500 hover:scale-110 hover:shadow-2xl"
                 />
@@ -37,8 +36,8 @@ const Profile: FC = () => {
             </div>
 
             {/* Profile Bio */}
-            <div className="text-center max-w-xs text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                Passionate about Web Development & UI/UX Design.
+            <div className="text-center max-w-sm text-sm sm:text-base text-gray-600 dark:text-gray-300">
+                "ไม่ต้องเก่งตั้งแต่เริ่มต้น แต่เริ่มต้นแล้วต้องเก่งขึ้นเรื่อยๆ"
             </div>
 
             {/* Infinite Scroll Animation with Logos */}

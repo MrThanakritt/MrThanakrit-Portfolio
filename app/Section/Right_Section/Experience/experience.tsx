@@ -8,7 +8,7 @@ const Experience = () => {
 
 
 
-            <div className="space-y-6">
+            <div className="space-y-6" id="Experience-section">
                 {/* Experience Section */}
                 {[
                     {

@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex flex-col gap-2">
             <div className="text-3xl font-semibold text-purple-400"> {data.name} </div>
             <div className="text-xl font-medium text-green-600"> {data.enducation} </div>
-            <div className="text-sm text-gray-500 w-4/5"> {data.about} </div>
+            <div className="text-base text-gray-400 w-4/5"> {data.about} </div>
             <div className="mt-5">
                 <a href={data.link}
                     target="_blank"

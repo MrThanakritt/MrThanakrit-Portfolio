@@ -2,18 +2,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { div } from "framer-motion/m";
 
 const projects = [
     {
-        year: "2000-2200",
+        year: "2024",
         img: "/screen.png",
-        title: "โปรเจกต์ของฉัน",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, repudiandae?",
+        title: "Portfolio",
+        description: "เว็บพอร์ตนี้ไม่ใช่แค่ผลงาน แต่เป็นการแสดงถึงความมุ่งมั่นและความสามารถที่ผมมี",
         github: "https://github.com/MrThanakritt",
-        youtube: "https://www.youtube.com/@thanakritcharoenchinnapat7498",
+        youtube: "",
         techs: [
-            { name: "React", color: "text-blue-500 group-hover:border-blue-500" },
+            { name: "Next Js", color: "text-blue-500 group-hover:border-blue-500" },
+            { name: "Typescript", color: "text-green-500 group-hover:border-green-500" },
             { name: "Tailwind CSS", color: "text-green-500 group-hover:border-green-500" },
         ],
     },
@@ -48,7 +48,7 @@ export default function Project() {
         <div>
             {/* Title */}
             <h2 className="text-2xl font-bold py-1">Project</h2>
-            <div className="space-y-6">
+            <div className="space-y-6" id="Project-section">
                 {projects.map((project, idx) => (
                     <div
                         key={idx}
@@ -80,16 +80,19 @@ export default function Project() {
                                         className="w-8 h-8 text-gray-400 transition duration-200 group-hover:text-white"
                                     />
                                 </a>
-                                <a href={project.youtube} target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon
-                                        icon={faYoutube}
-                                        className="w-8 h-8 text-gray-400 transition duration-200 group-hover:text-red-500"
-                                    />
-                                </a>
+                                {project.youtube && (
+                                    <a href={project.youtube} target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon
+                                            icon={faYoutube}
+                                            className="w-8 h-8 text-gray-400 transition duration-200 group-hover:text-red-500"
+                                        />
+                                    </a>
+                                )}
                             </div>
 
+
                             {/* Description */}
-                            <p className="text-sm text-gray-400 transition duration-300 group-hover:text-gray-200">
+                            <p className="text-base text-gray-400 transition duration-300 group-hover:text-gray-200">
                                 {project.description}
                             </p>
 
