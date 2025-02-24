@@ -5,21 +5,19 @@ const Experience = () => {
             {/* Title */}
             <h2 className="text-2xl font-bold py-1">Experience</h2>
 
-
-
-
             <div className="space-y-6" id="Experience-section">
                 {/* Experience Section */}
                 {[
                     {
-                        date: "April 2024",
+                        date: "1-20 March 2024",
                         img: "/intern.jpg",
                         title: "ฝึกงาน คลินิกเสริมความงาม ซีคอนบางแค",
                         description:
-                            "หน้าที่ที่ได้รับมอบหมาย \nดูแลและตรวจเช็คคอมพิวเตอร์ภายในคลินิก \nทำบัญชีรายรับ-รายจ่ายของทางคลินิก",
+                            "หน้าที่หลักในการทำงาน \nดูแลและตรวจเช็คคอมพิวเตอร์ภายในคลินิก \nทำบัญชีรายรับ-รายจ่ายของทางคลินิก",
                         techs: [
-                            { name: "Excel", color: "text-green-400 group-hover:border-green-400" },
-                            { name: "IT Support", color: "text-blue-500 group-hover:border-blue-500" },
+                            { name: "Excel", color: "text-white group-hover:border-green-400" },
+                            { name: "IT Support", color: "text-white group-hover:border-blue-500" },
+                            { name: "Accounting officer", color: "text-white group-hover:border-orange-400" },
                         ],
                     },
                     {
@@ -28,8 +26,8 @@ const Experience = () => {
                         title: "เข้าร่วมกิจกรรม Open House\nมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี คณะ SIT",
                         description: "เข้าร่วมกิจกรรม Workshop Software Developer101",
                         techs: [
-                            { name: "KMUTT", color: "text-orange-600 group-hover:border-orange-600" },
-                            { name: "SIT Openhouse", color: "text-yellow-300 group-hover:border-blue-500" },
+                            { name: "KMUTT", color: "text-white group-hover:border-orange-600" },
+                            { name: "SIT Openhouse", color: "text-white group-hover:border-yellow-500" },
                         ],
                     },
                 ].map((exp, idx) => (

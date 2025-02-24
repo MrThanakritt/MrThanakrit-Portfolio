@@ -11,14 +11,14 @@ const Blog: FC = () => {
             altText: "Image of me",
             title: "Fourier อยู่รอบตัวเรา",
             description: "นี่คือ blog แรกของผม",
-            techStack: ["Medium", "Blog"],
+            techStack: ["Medium", "Blog","Fourier"],
         },
         {
-            imageSrc: "/screen.png",
+            imageSrc: "/me.jpeg",
             altText: "Project Screenshot",
             title: "โปรเจกต์ของฉัน",
             description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, repudiandae?",
-            techStack: ["React", "Tailwind CSS"],
+            techStack: ["Medium", "Blog","Flutter"],
 
         }
     ];
@@ -28,7 +28,7 @@ const Blog: FC = () => {
             <h2 className="text-2xl font-bold py-1">Blog</h2>
             {blogs.map((blog, index) => (
                 <div key={index} className="grid grid-cols-[auto_1fr] gap-x-6 items-start px-3 py-7 rounded-md transition duration-300 hover:bg-gray-700 group">
-                    <div className="flex flex-col items-start">
+                    <div className="flex flex-col items-start" id="Blog-section">
                         <img src={blog.imageSrc} alt={blog.altText} className="w-full max-w-[9rem] h-24 rounded-md" />
                     </div>
 
@@ -50,7 +50,7 @@ const Blog: FC = () => {
 
                         <div className="flex gap-3 text-sm font-medium">
                             {blog.techStack.map((tech, index) => (
-                                <span key={index} className="px-2 py-1 text-gray-400 border border-gray-400 rounded transition duration-300 group-hover:text-blue-500 group-hover:border-blue-500">
+                                <span key={index} className="px-2 py-1 text-gray-400 border border-gray-400 rounded transition duration-300 group-hover:text-white group-hover:border-white">
                                     {tech}
                                 </span>
                             ))}

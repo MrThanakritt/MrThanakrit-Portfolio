@@ -5,50 +5,87 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const projects = [
     {
-        year: "2024",
-        img: "/screen.png",
-        title: "Portfolio",
-        description: "เว็บพอร์ตนี้ไม่ใช่แค่ผลงาน แต่เป็นการแสดงถึงความมุ่งมั่นและความสามารถที่ผมมี",
+        year: "",
+        img: "/portfolio_io.png",
+        title: "Personal Portfolio Website",
+        description: "การใช้ Next Js พัฒนาเว็บ Portfolio เพื่อใช้ในการแสดงผลงาน",
         github: "https://github.com/MrThanakritt",
         youtube: "",
         techs: [
-            { name: "Next Js", color: "text-blue-500 group-hover:border-blue-500" },
-            { name: "Typescript", color: "text-green-500 group-hover:border-green-500" },
-            { name: "Tailwind CSS", color: "text-green-500 group-hover:border-green-500" },
+            { name: "Next Js", color: "text-blue-500 group-hover:border-white" },
+            { name: "Typescript", color: "text-green-500 group-hover:border-blue-500" },
+            { name: "Tailwind CSS", color: "text-green-500 group-hover:border-blue-400" },
         ],
     },
     {
-        year: "2000-2200",
-        img: "/screen.png",
-        title: "โปรเจกต์ของฉัน",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, repudiandae?",
+        year: "",
+        img: "/dream.png",
+        title: "Dream Record E-Commerce",
+        description: "การใช้ Vus Js พัฒนาเว็บ E-Commerce เกี่ยวกับแผ่นเสียง",
         github: "https://github.com/MrThanakritt",
         youtube: "https://www.youtube.com/@thanakritcharoenchinnapat7498",
         techs: [
-            { name: "React", color: "text-blue-500 group-hover:border-blue-500" },
-            { name: "Tailwind CSS", color: "text-green-500 group-hover:border-green-500" },
+            { name: "Vue Js", color: "text-white group-hover:border-green-500" },
+            { name: "Tailwind CSS", color: "text-white group-hover:border-blue-500" },
+            { name: "Daisy UI", color: "text-white group-hover:border-yellow-500" },
         ],
     },
     {
-        year: "2000-2200",
-        img: "/screen.png",
-        title: "โปรเจกต์ของฉัน",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, repudiandae?",
+        year: "",
+        img: "/shabu_app.png",
+        title: "Web Application for Food Ordering",
+        description: "การใช้ Vue JS พัฒนาWeb Application ระบบสั่งอาหาร",
         github: "https://github.com/MrThanakritt",
         youtube: "https://www.youtube.com/@thanakritcharoenchinnapat7498",
         techs: [
-            { name: "React", color: "text-blue-500 group-hover:border-blue-500" },
-            { name: "Tailwind CSS", color: "text-green-500 group-hover:border-green-500" },
+            { name: "Vue JS", color: "text-white group-hover:border-green-500" },
+            { name: "Tailwind CSS", color: "text-white group-hover:border-blue-500" },
+            { name: "Daisy UI", color: "text-white group-hover:border-yellow-500" },
+        ],
+    },
+    {
+        year: "",
+        img: "/MySos.png",
+        title: "MySOS App",
+        description: "การใช้ Flutter พัฒนาแอปพลิเคชั่นให้ข้อมูลติดต่อในเหตุฉุกเฉิน",
+        github: "https://github.com/MrThanakritt",
+        youtube: "https://www.youtube.com/@thanakritcharoenchinnapat7498",
+        techs: [
+            { name: "Dart", color: "text-white group-hover:border-blue-400" },
+            { name: "Flutter", color: "text-white group-hover:border-blue-400" },
+        ],
+    },
+    {
+        year: "",
+        img: "/home_auto.png",
+        title: "HOME Automation App",
+        description: "การใช้ Flutter พัฒนาแอปพลิเคชั่นสำหรับควบคุมระบบต่างๆภายในบ้าน เผื่อนำไปใช้แทน Home Assistant App ในอนาคต",
+        github: "https://github.com/MrThanakritt",
+        youtube: "https://www.youtube.com/@thanakritcharoenchinnapat7498",
+        techs: [
+            { name: "Dart", color: "text-white group-hover:border-blue-400" },
+            { name: "Flutter", color: "text-white group-hover:border-blue-400" },
+        ],
+    },
+    {
+        year: "",
+        img: "/home_ass.png",
+        title: "Home Assistant",
+        description: "ระบบ IOT ควบคุมอุปกรณ์ต่างๆภายในบ้าน โดยการใช้ Raspberry Pi5 มาเป็นเครื่องเซิฟเวอร์เพื่อใช้งาน Home Assistnat",
+        github: "",
+        youtube: "",
+        techs: [
+            { name: "Raspberry pi 5", color: "text-white group-hover:border-red-500" },
         ],
     },
 ];
 
 export default function Project() {
     return (
-        <div>
+        <div id="Project-section">
             {/* Title */}
-            <h2 className="text-2xl font-bold py-1">Project</h2>
-            <div className="space-y-6" id="Project-section">
+            <h2 className="text-2xl font-bold py-1" >Project</h2>
+            <div className="space-y-6" >
                 {projects.map((project, idx) => (
                     <div
                         key={idx}
@@ -74,12 +111,14 @@ export default function Project() {
 
                             {/* Social Icons */}
                             <div className="flex gap-3">
-                                <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon
-                                        icon={faGithub}
-                                        className="w-8 h-8 text-gray-400 transition duration-200 group-hover:text-white"
-                                    />
-                                </a>
+                                {project.github &&
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon
+                                            icon={faGithub}
+                                            className="w-8 h-8 text-gray-400 transition duration-200 group-hover:text-white"
+                                        />
+                                    </a>
+                                }
                                 {project.youtube && (
                                     <a href={project.youtube} target="_blank" rel="noopener noreferrer">
                                         <FontAwesomeIcon

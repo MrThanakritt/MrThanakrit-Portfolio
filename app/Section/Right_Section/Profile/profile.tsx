@@ -14,11 +14,12 @@ const scrollLogos = [
     "/Vitejs.png",
     "/Vue.js.png",
     "/dart.png",
+    "/flutter_logo.png",
 ];
 
 const Profile: FC = () => {
     return (
-        <div className="flex flex-col items-center justify-center space-y-4" id="Profile-section">
+        <div id="Profile-section" className="flex flex-col items-center justify-center space-y-4" >
             {/* Profile Image */}
             <div className="w-40 h-40 sm:w-44 sm:h-44 flex justify-center items-center mb-3">
                 <img
