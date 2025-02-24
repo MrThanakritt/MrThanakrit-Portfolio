@@ -11,15 +11,17 @@ const Blog: FC = () => {
             altText: "Image of me",
             title: "Fourier อยู่รอบตัวเรา",
             description: "นี่คือ blog แรกของผม",
-            techStack: ["Medium", "Blog","Fourier"],
+            techStack: ["Medium", "Blog", "Fourier"],
+            medium: "https://medium.com/@thanakritcharoenchinnapat/กรรมการฟูริเยร์อยู่ข้างๆเรา-03f4b69e2642",
+
         },
         {
             imageSrc: "/me.jpeg",
             altText: "Project Screenshot",
             title: "โปรเจกต์ของฉัน",
             description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, repudiandae?",
-            techStack: ["Medium", "Blog","Flutter"],
-
+            techStack: ["Medium", "Blog", "Flutter"],
+            medium: "https://medium.com/@thanakritcharoenchinnapat/flutter-มีอะไรดี-bc74a116c53c",
         }
     ];
 
@@ -39,9 +41,14 @@ const Blog: FC = () => {
                         </h3>
 
                         <div className="flex gap-3">
-                            <a href="https://medium.com/@thanakritcharoenchinnapat/%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9F%E0%B8%B9%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A2%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%86%E0%B9%80%E0%B8%A3%E0%B8%B2-03f4b69e2642" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faMedium} className="w-8 h-8 text-gray-400 transition duration-200 group-hover:text-white" />
-                            </a>
+                            {blog.medium &&
+                                <a href={blog.medium} target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon
+                                        icon={faMedium}
+                                        className="w-8 h-8 text-gray-400 transition duration-200 group-hover:text-white"
+                                    />
+                                </a>
+                            }
                         </div>
 
                         <p className="text-base text-gray-400 transition duration-300 group-hover:text-gray-200">

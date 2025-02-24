@@ -9,7 +9,7 @@ const projects = [
         img: "/portfolio_io.png",
         title: "Personal Portfolio Website",
         description: "การใช้ Next Js พัฒนาเว็บ Portfolio เพื่อใช้ในการแสดงผลงาน",
-        github: "https://github.com/MrThanakritt",
+        github: "https://github.com/MrThanakritt/MrThanakrit-Portfolio",
         youtube: "",
         techs: [
             { name: "Next Js", color: "text-blue-500 group-hover:border-white" },
@@ -22,8 +22,8 @@ const projects = [
         img: "/dream.png",
         title: "Dream Record E-Commerce",
         description: "การใช้ Vus Js พัฒนาเว็บ E-Commerce เกี่ยวกับแผ่นเสียง",
-        github: "https://github.com/MrThanakritt",
-        youtube: "https://www.youtube.com/@thanakritcharoenchinnapat7498",
+        github: "https://github.com/MrThanakritt/E-Commerce-Vue",
+        youtube: "",
         techs: [
             { name: "Vue Js", color: "text-white group-hover:border-green-500" },
             { name: "Tailwind CSS", color: "text-white group-hover:border-blue-500" },
@@ -36,7 +36,7 @@ const projects = [
         title: "Web Application for Food Ordering",
         description: "การใช้ Vue JS พัฒนาWeb Application ระบบสั่งอาหาร",
         github: "https://github.com/MrThanakritt",
-        youtube: "https://www.youtube.com/@thanakritcharoenchinnapat7498",
+        youtube: "",
         techs: [
             { name: "Vue JS", color: "text-white group-hover:border-green-500" },
             { name: "Tailwind CSS", color: "text-white group-hover:border-blue-500" },
@@ -48,8 +48,7 @@ const projects = [
         img: "/MySos.png",
         title: "MySOS App",
         description: "การใช้ Flutter พัฒนาแอปพลิเคชั่นให้ข้อมูลติดต่อในเหตุฉุกเฉิน",
-        github: "https://github.com/MrThanakritt",
-        youtube: "https://www.youtube.com/@thanakritcharoenchinnapat7498",
+        github: "https://github.com/MrThanakritt/Shabu-Web-app",
         techs: [
             { name: "Dart", color: "text-white group-hover:border-blue-400" },
             { name: "Flutter", color: "text-white group-hover:border-blue-400" },
@@ -60,8 +59,8 @@ const projects = [
         img: "/home_auto.png",
         title: "HOME Automation App",
         description: "การใช้ Flutter พัฒนาแอปพลิเคชั่นสำหรับควบคุมระบบต่างๆภายในบ้าน เผื่อนำไปใช้แทน Home Assistant App ในอนาคต",
-        github: "https://github.com/MrThanakritt",
-        youtube: "https://www.youtube.com/@thanakritcharoenchinnapat7498",
+        github: "https://github.com/MrThanakritt/Home-Automation-App-Flutter",
+        youtube: "",
         techs: [
             { name: "Dart", color: "text-white group-hover:border-blue-400" },
             { name: "Flutter", color: "text-white group-hover:border-blue-400" },
