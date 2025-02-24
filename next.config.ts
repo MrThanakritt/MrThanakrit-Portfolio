@@ -1,11 +1,11 @@
-const isProd = process.env.NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
-  output: 'export', // บังคับให้ Next.js สร้าง Static HTML
-  assetPrefix: isProd ? '/MrThanakritt-Portfolio/' : '', // กำหนด Path ให้ตรงกับ GitHub Pages
+  output: "export",
+  assetPrefix: isProd ? "/MrThanakritt-Portfolio/" : "",
   images: {
-    unoptimized: true, // ปิด Image Optimization (เพราะใช้ Static Export)
+    unoptimized: true,
   },
-};
+} satisfies import("next").NextConfig; // ใช้ satisfies ให้ TypeScript ตรวจสอบโครงสร้าง
 
 export default nextConfig;
