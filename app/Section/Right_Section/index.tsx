@@ -7,7 +7,7 @@ import Blog from "./Blog/blog";
 const RightSection = () => {
     return (
         <div className="grid gap-y-5 lg:gap-y-40 px-5">
-            <div id="Profile-section"><Profile /></div>
+            <div><Profile /></div>
             <div><Project /></div>
             <div><Experience /></div>
             <div><Blog/></div>
